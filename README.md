@@ -18,7 +18,27 @@
 本项目支持以下 .NET 版本：
 
 - `.NET 6`、`.NET 7`、`.NET 8`、`.NET 9`、`.NET 10`、以及更高版本的 .NET。
+## 使用示例
 
+获取根目录文件列表
+```csharp
+using KuaKe;
+class Program
+{
+    static void Main()
+    {
+        var lib = new KuaKeFileSerice("你的__pus");
+        var s = lib.GetFileList();
+        foreach(var f in s)
+        {
+            System.Console.WriteLine(f.Name);
+        }
+    }
+}
+```
+```
+输出
+```
 ## 贡献
 
 欢迎提出问题、改进建议或直接提交 Pull Request！
