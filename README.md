@@ -44,6 +44,12 @@ class Program
 test.cs
 haha564@haha564PC:~/桌面/test$ 
 ```
+```
+删除文件夹
+````csharp
+ Console.WriteLine(lib.DeleteFiles("00e13e95fa154dbf919ccd2495b2753a"));
+````
+```
 ## 贡献
 
 欢迎提出问题、改进建议或直接提交 Pull Request！
