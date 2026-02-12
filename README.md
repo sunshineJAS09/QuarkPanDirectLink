@@ -19,3 +19,12 @@
 
 - `.NET 6`、`.NET 7`、`.NET 8`、`.NET 9`、`.NET 10`、以及更高版本的 .NET。
 
+## 贡献
+
+欢迎提出问题、改进建议或直接提交 Pull Request！
+请前往Github存
+
+## 联系方式
+
+- [前往我的Github](https://github.com/sunshineJAS09)
+- [前往我的B站首页](https://space.bilibili.com/604524574/)
