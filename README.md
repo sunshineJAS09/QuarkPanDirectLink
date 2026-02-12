@@ -37,7 +37,12 @@ class Program
 }
 ```
 ```
-输出
+输出:
+夸克上传文件
+蓝色大海的传说S01E01第1集.mkv
+来自：分享
+test.cs
+haha564@haha564PC:~/桌面/test$ 
 ```
 ## 贡献
 
