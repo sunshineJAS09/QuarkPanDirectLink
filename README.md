@@ -53,6 +53,23 @@ haha564@haha564PC:~/桌面/test$
 Console.WriteLine(lib.GetFileDownloadUrl("02b70bcab77847a290cf28977c58eb70"));
 //输出:https://dl-pc-sz.pds.quark.cn/5d41c66f4fb92d9cfc7d42768e3440dd949e5a4d/5d41c66feb6e764a9a7b4618a69735d13c81d38a?Expires=1770953122&OSSAccessKeyId=LTAI5tJJpWQEfrcKHnd1LqsZ&Signature=e7OkRsC1%2Bxx0Ncf2TyJC7Qz5%2BKU%3D&x-oss-traffic-limit=503316480&response-content-disposition=attachment%3B%20filename%3Dtest.cs%3Bfilename%2A%3Dutf-8%27%27test.cs&callback-var=eyJ4OmF1IjoiMTc3MDk1MzEyMi0wLTIxNjAwLTdkZTMiLCJ4Om9yayI6ImQ2WjE0OXRlTEdIMTc1N1lrVTMyMmptSFpHNkNySjZJOE1ITjVrYXBOIiwieDp1ZCI6IjE2LTItNi0wLTYtTi00LU4tMS0xNi0wLU4tTi1OLU4iLCJ4OnNwIjoiMTAwIiwieDp0b2tlbiI6IjQtM2RiYjVkYzkwZGVlNDhiODE5MDBkZTgxYjU0YzQxNTktMi0xLTIwNDgtMDAwMDIwNzkwOTZiNGNjZWFmMWY2ZmE5ZjNjODAzYzctMC0wLTAtMC0wZDc0ZjBkNzcxZjk0MWZiNGZhNWM5MzMzMmUwMmYzMSIsIng6dHRsIjoiMjE2MDAifQ%3D%3D&abt=2_0_&dfi=169&callback=eyJjYWxsYmFja0JvZHlUeXBlIjoiYXBwbGljYXRpb24vanNvbiIsImNhbGxiYWNrU3RhZ2UiOiJiZWZvcmUtZXhlY3V0ZSIsImNhbGxiYWNrRmFpbHVyZUFjdGlvbiI6Imlnbm9yZSIsImNhbGxiYWNrVXJsIjoiaHR0cHM6Ly9jbG91ZC1hdXRoLmRyaXZlLnF1YXJrLmNuL291dGVyL29zcy9jaGVja3BsYXkiLCJjYWxsYmFja0JvZHkiOiJ7XCJob3N0XCI6JHtodHRwSGVhZGVyLmhvc3R9LFwic2l6ZVwiOiR7c2l6ZX0sXCJyYW5nZVwiOiR7aHR0cEhlYWRlci5yYW5nZX0sXCJyZWZlcmVyXCI6JHtodHRwSGVhZGVyLnJlZmVyZXJ9LFwiY29va2llXCI6JHtodHRwSGVhZGVyLmNvb2tpZX0sXCJtZXRob2RcIjoke2h0dHBIZWFkZXIubWV0aG9kfSxcInVscnBcIjoke2h0dHBIZWFkZXIueC11bHJwfSxcImlwXCI6JHtjbGllbnRJcH0sXCJwb3J0XCI6JHtjbGllbnRQb3J0fSxcIm9ya1wiOiR7eDpvcmt9LFwib2JqZWN0XCI6JHtvYmplY3R9LFwic3BcIjoke3g6c3B9LFwidWRcIjoke3g6dWR9LFwidG9rZW5cIjoke3g6dG9rZW59LFwiYXVcIjoke3g6YXV9LFwidHRsXCI6JHt4OnR0bH0sXCJkdF9zcFwiOiR7eDpkdF9zcH0sXCJoc3BcIjoke3g6aHNwfSxcImNsaWVudF90b2tlblwiOiR7cXVlcnlTdHJpbmcuY2xpZW50X3Rva2VufX0ifQ%3D%3D&ud=16-2-6-0-6-N-4-N-1-16-0-N-N-N-N
 ````
+移动文件/文件夹
+````csharp
+ Console.WriteLine(lib.MoveFiles("26b42f89b3bd87df","d87df092500c4b1797eb"));
+//输出:True
+```
+Search搜索功能
+````csharp
+Console.WriteLine(lib.SearchFiles("蓝色大海的传说_2016"));
+````
+文件重命名
+````csharp
+Console.WriteLine(lib.Rename_File("6f0d1339536b470da7673f819530dada","123"));//输出:{"status":200,"code":0,"message":"","timestamp":1770995025,"data":{},"metadata":{"tq_gap":500}}
+````
+创建文件夹
+````csharp
+Console.WriteLine(lib.Create_Folder("孙笑川文件夹","0"));//输出:{"status":200,"code":0,"message":"","timestamp":1770995179,"data":{"finish":true,"fid":"6b39519926b343d3b631fc73da4e9af0"},"metadata":{}}
+````
 ## 贡献
 
 欢迎提出问题、改进建议或直接提交 Pull Request！
