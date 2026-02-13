@@ -85,6 +85,7 @@ namespace KuaKe
         public string SearchFiles(string keyword, string folder_id = "0", int page = 1, int size = 50, string sort_field = "file_name", string sort_order = "asc")
         {
             restRequest = new RestRequest("/1/clouddrive/file/search", Method.Get);
+            restRequest.AddHeader("Cookie",_cookie);
             cookies?.AddCookieHeader(new
             {
                 q = keyword,
@@ -99,7 +100,8 @@ namespace KuaKe
         }
         public string RenameFile(string file_id, string NewFileName)
         {
-            restRequest = new RestRequest("/1/clouddrive/file/rename", Method.Get);
+            restRequest = new RestRequest("/1/clouddrive/file/rename", Method.Post);
+            restRequest.AddHeader("Cookie", _cookie);
             cookies?.AddCookieHeader(new
             {
                 fid = file_id,
@@ -149,6 +151,7 @@ namespace KuaKe
             using (restClient = new RestClient(options))
             {
                 restRequest = new RestRequest("/1/clouddrive/file", Method.Post);
+                restRequest.AddHeader("Cookie", _cookie);
                 if (floderPath == null)
                 {
                     cookies?.AddCookieHeader(new
